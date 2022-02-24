@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 public class ContaBancaria {
 //Atributos
 	private String titular;
-	private double saldo=0;
+	private double saldo;
 	private LocalDate dataAbertura= LocalDate.now();
 //Construtor
 	public  ContaBancaria(String aTitular) {
