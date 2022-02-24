@@ -12,7 +12,7 @@ public class Main {
 		  ContaBancaria c2= new ContaBancaria("Rita Silva");		//Criar Conta
 		  estrela.criaConta (c1);									//Associar conta ao array contas do Banco
 		  estrela.criaConta (c2);									//Associar conta ao array contas do Banco
-		  c1.setSaldo(200.25);										// Alterar saldo inicila desta conta, para testar main
+		  c1.setSaldo(200.25);										// Alterar saldo inicial desta conta, para testar main
 		  
 
 //FALTA MENU

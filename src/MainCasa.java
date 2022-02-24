@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainCasa {
 
@@ -15,7 +17,17 @@ public class MainCasa {
 		casa3.setPrecoCusto(128000);
 		casa3.setPrecoVenda(112000);
 		
-		System.out.println("\nMorada: " + casa1.getMorada() + "\nPreço de custo: " + casa1.getPrecoCusto() + "\nPreço de venda: " +casa1.getPrecoVenda() +"\nMargem de Lucro: " + casa1.getMargemLucro() + "\nPercentagem de Margem de Lucro: " + casa1.getPercentMargemLucro());  
+		List<Casa> casas = new ArrayList<Casa>();
+		casas.add(casa1);
+		casas.add(casa2);
+		casas.add(casa3);
+		
+		
+		for(Casa i: casas) {
+			System.out.println("\nMorada: " + i.getMorada() + "\nPreço de custo: " + i.getPrecoCusto() + "\nPreço de venda: " 
+		+i.getPrecoVenda() +"\nMargem de Lucro: " + i.getMargemLucro() + "\nPercentagem de Margem de Lucro: " 
+					+ i.getPercentMargemLucro()+"\n");  
+		}
 				
 	}
 
