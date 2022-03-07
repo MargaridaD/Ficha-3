@@ -19,16 +19,15 @@ public class Main {
 		 System.out.println("Titular: ");
 		 String titular = sc.nextLine();
 		 ContaBancaria c= estrela.getConta(titular);
-
-		    int i =0;
-		    while (i != 3){
-		    	
-			    System.out.println("\nDepósito: 1\nLevantamento: 2\nSair: 3");
-			    i = sc.nextInt();
+		 
+		 int i =0;
+		 while (i != 3) {
+			 
+			 System.out.println("\nDepósito: 1\nLevantamento: 2\nSair: 3");
+			 i = sc.nextInt();
 			    
-			    switch(i) {
-			    case 1:
-			    	System.out.println("Quantia a depositar:");
+			 switch(i) {
+			 	case 1:System.out.println("Quantia a depositar:");
 			    	double quantiaD = sc.nextDouble();
 			    	c.depositar(quantiaD);
 				    System.out.println(c.getInformaçãoConta());
